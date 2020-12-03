@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="">
+    <!-- to use jQuery we need to import it like this -->
+    <script src="jquery-3.4.1.js"></script>
+</head>
+
+<body>
+    <!--
+			in this example use use jQuery to
+		change the content itself.
+		The $ is shorthand for the jQuery function
+			We are passing in a CSS selector ('#title') which
+			gets this element by its id "title".
+			The html function  .html sets the html content
+			of an element Changing h1 Hello to Goodbye .html('Goodbye') when clicked on
+		-->
+    <h1 id="title" onclick="sayGoodbye ();">
+
+        Hello
+    </h1>
+</body>
+
+<script type="text/javascript">
+    function sayGoodbye() {
+        $("#title").html("Goodbye");
+        $("#title").click(function() {
+            $("#title").html("Hello");
+            $("#title").off("click");
+        });
+    };
+</script>
+
+
+</html>

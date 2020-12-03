@@ -1,0 +1,11 @@
+h1{
+/* change font */
+	font-family: helvetica,sans-serif;
+	/* change  text color */
+	color: blue;
+	/*create a shadow effect with color red*/
+	text-shadow: 2px 2px #ff0000; 
+
+
+
+}
